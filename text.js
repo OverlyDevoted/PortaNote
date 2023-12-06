@@ -1,0 +1,2 @@
+const txt_area = document.getElementById("edit_content");
+txt_area.innerHTML = "# Header text\nIn this text area you will be able to edit text in Markdown and save it, and be able to easily access these notes between your devices"

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortaNote - Notepad everywhere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Code+Pro:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body style="background-color: black;">
+    
+    <header>
+        <h1>Porta<span style="color: #00A5F5;">Note</span></h1>
+        <nav>
+            <a href="https://overlydevoted.github.io/2023GameAwards/"><img src="./images/icons/medal.svg" alt=""></a>
+            <a href="https://overlydevoted.github.io/LeagueStats/"><img src="./images/icons/league.png" alt=""></a>
+            <a href="https://github.com/OverlyDevoted"><img src="./images/icons/github.svg" alt=""></a>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Notes</h2>
+        <div class="grid_cont">
+            <div class="notes">
+                <div class="note_item">
+                    <span>Web server components</span>
+                    <span>2023-12-01</span>
+                </div>
+                <div class="note_item">
+                    <span>How to SSH into a remote machine</span>
+                    <span>2023-11-29</span>
+                </div>
+                <div class="note_item">
+                    <span>Hack the box: <span style="color: yellowgreen;">Nibbles</span></span>
+                    <span>2023-11-28</span>
+                </div>
+                <div class="note_item">
+                    <span>Reverse shell, bind shell, web shell</span>
+                    <span>2023-11-22</span>
+                </div>
+                <div class="note_item">
+                    <span style="color:var(--blue);">EternalBlue</span>
+                    <span>2023-11-19</span>
+                </div>
+                <div class="note_item">
+                    <span>OWASP Top 10</span>
+                    <span>2023-11-15</span>
+                </div>
+            </div>
+            <div class="edit">
+                <form action="submit">
+                    <div>
+                        <input type="text" placeholder="Note name" id="edit_name" value="Privelege Escalation">
+                        <button id="save_btn"><img src="images/icons/save.svg" alt="Save"></button>
+                    </div>
+                    <div class="line"></div>
+                    <textarea name="content" id="edit_content"></textarea>
+                </form>
+            </div>
+            <div class="preview">
+                <span class="header1">Privelege Escalation</span>
+                <div class="line"></div>
+                <div class="preview_text">
+                    <span class="header2">Header Text</span>
+                    <span>In this text area you will be able to edit text in Markdown and save it, and be able to easily
+                        access these notes between your devices</span>
+                </div>
+            </div>
+            <div class="stats_cont">
+                <span class="header1">Stats</span>
+                <div class="stats">
+                    <div>
+                        <h4>Notes</h4>
+                        <p>14</p>
+                    </div>
+                    <div>
+                        <h4>Words</h4>
+                        <p>19k</p>
+                    </div>
+                    <div>
+                        <h4>Letters</h4>
+                        <p>112k</p>
+                    </div>
+                    <div>
+                        <h4>Images</h4>
+                        <p>34</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h2>© Robert Dulko 2023 - All rights are reserved. 👽</h2>
+    </footer>
+</body>
+<script src="/text.js"></script>
+
+</html>
