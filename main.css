@@ -1,5 +1,5 @@
 html {
-    
+
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Source Code Pro', monospace;
@@ -14,13 +14,14 @@ html {
     --yellow: #F5EC00;
     --red: #F5001D;
     --green: #96df0e;
+    --visited: #a12fe2;
 }
 
 body {
     min-height: 100dvh;
     position: relative;
     display: flex;
-   
+
     flex-direction: column;
     text-align: center;
 }
@@ -32,6 +33,14 @@ h3 {
     margin: 0;
 }
 
+main>h2 {
+    width: 40%;
+    margin: 0 auto;
+}
+
+main > div > a:visited {
+    color: var(--visited);
+}
 #background {
     position: fixed;
     height: 100%;
@@ -54,6 +63,7 @@ header {
 header img {
     height: 40px;
 }
+
 main {
     flex: 1 1 auto;
 
